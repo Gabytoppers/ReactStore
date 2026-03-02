@@ -18,3 +18,7 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+// Browser permite navegar sin recargar la pagina
+// Routes contiene todas las rutas
+// MainLayout envuelve cada panta con los componentes hijos

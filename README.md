@@ -16,3 +16,9 @@
  ├── App.jsx
  ├── main.jsx
  └── index.css
+
+ npm install -D tailwindcss @taolwindcss/vite
+
+ librerias:
+ react-router-dom
+ react-icons
