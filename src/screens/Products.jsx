@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import ProductCard from "../components/ProductCard";
+export default function Products({onAdd}) {
+  const [products, setProducts] = useState([]);
+}
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -17,6 +21,16 @@ export default function Products() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         
         {products.map(product => (
+          <ProductsCard
+            key={product.id}
+            title={product.title}
+            image={product.image}
+            price={price}
+
+            onAdd={() => onAddToCart(product)}
+          />
+        ))}
+
           <div
             key={product.id}
             className="bg-white rounded-2xl shadow-md p-5 flex flex-col gap-4 hover:shadow-lg transition"
@@ -65,7 +79,7 @@ export default function Products() {
             </div>
 
           </div>
-        ))}
+        
 
       </div>
     </div>

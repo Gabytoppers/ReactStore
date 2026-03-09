@@ -10,6 +10,13 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
+/*
+:root{
+  --global-text: 'san-serif';
+  --text-color-title: red;
+}
+*/
+
 html, body {
   margin: 0;
   padding: 0;

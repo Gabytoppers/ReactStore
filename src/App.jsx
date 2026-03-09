@@ -15,6 +15,10 @@ export default function App() {
   const[cart, setCart] = useState ([]);
 
   //estado para la notificacion
+  const [toast, setToast] = useState("");
+
+
+  //estado para la notificacion
   const showToast = (text) => {
     setToast(text);
     setTimeout(() => setToast(""), 2000); //se oculta sola despues de 2s)
@@ -25,6 +29,9 @@ export default function App() {
     setCart([...cart, product]);
     showToast("Producto agregado al carrito");
   };
+
+
+
 
   return (
     <BrowserRouter>
